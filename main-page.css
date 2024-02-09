@@ -1,0 +1,56 @@
+header, footer {
+    visibility: hidden;
+}
+
+.st-emotion-cache-uf99v8 {
+    background-image: url("https://iili.io/J1MG9st.png");
+    background-position: center;
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-attachment: fixed; /* Keep the background image fixed during scroll */
+    background-size: 100% 100%;
+}
+
+.st-emotion-cache-6qob1r {
+    /*background-image: url("");*/
+}
+
+/* MAIN CONTENT */
+section.main > div {
+    max-width:50rem
+}
+
+
+p {
+    font-family: 'Souvenir', sans-serif;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #0D1217;
+    text-indent: 25px;
+}
+
+hr {
+    color: #F9F9F9;
+    margin-top: 0px;
+    margin-bottom: 18px;
+}
+
+/* TITLE */
+.st-emotion-cache-183lzff {
+    color: rgb(146, 208, 252);
+}
+
+/* ELEMENTS */
+.stylized-divider-element {
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+.saitos-lair {
+    padding: 20px;
+    border: 5px solid darkgray;
+    margin-bottom: 20px;
+}
