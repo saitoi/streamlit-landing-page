@@ -3,7 +3,8 @@ header, footer {
 }
 
 .st-emotion-cache-uf99v8 {
-    background-image: url("https://iili.io/J1MG9st.png");
+    /*background-image: url("https://iili.io/J1MG9st.png");*/
+    background-image: url("https://iili.io/J1VMnef.png");
     background-position: center;
     background-repeat: no-repeat; /* Do not repeat the image */
     background-attachment: fixed; /* Keep the background image fixed during scroll */
@@ -16,7 +17,12 @@ header, footer {
 
 /* MAIN CONTENT */
 section.main > div {
-    max-width:50rem
+    max-width:50rem;
+    /*background-image: url("https://iili.io/J1VuOMv.png");*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 
