@@ -1,6 +1,7 @@
 .gitignore
 .DS_Store
 .streamlit-landing-page.iml
+src/.DS_Store
 .streamlit/
 __pycache__/
 .idea/
