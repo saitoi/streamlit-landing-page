@@ -1,72 +1,55 @@
 import streamlit as st
-import streamlit_elements as st_elements
+from elements import planck, ico
+from streamlit_extras.grid import grid
 
-with open("main-page.css") as css:
-    st.markdown(f'<style>{css.read()}</style>', unsafe_allow_html=True)
+with open("main-page.css") as main, open("interpage.css") as interpage:
+    st.markdown(f'<style>{main.read()}</style>', unsafe_allow_html=True)
+    st.markdown(f'<style>{interpage.read()}</style>', unsafe_allow_html=True)
 
-# SIDEBAR
-with st.sidebar:
-    st.write('This is not right')
+# ICONS
+st.markdown('<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">',unsafe_allow_html=True)
 
-# TITLE IMAGE
-st.image(image='assets/saitos-lair-shrek.png', width=750)
-
-st_elements.divider_element()
+st.image(image='src/assets/main-title.png', width=900)
 
 # COLUMNS
 col1, col2 = st.columns([0.6, 0.4], gap='small')
 
 with col1:
-    st.markdown("""
-    <p>
-        Hey, my name is Pedro Saito and I'm a Computer Science Undergrad
-    at the Federal University of Rio de Janeiro.appetere putent imperdiet
-     luctus menandri suscipiantur habeo constituto auctor sententiae molestiae
-      principes suavitate conclusionemque postea docendi instructior  
-      partiendo efficitur has
-    </p>
-    """, unsafe_allow_html=True)
+    st.write("""Hey, my name is Pedro Saito and I'm a Computer Science 
+    Undergrad at the Federal University of Rio de Janeiro.appetere putent 
+    imperdiet luctus menandri suscipiantur habeo constituto auctor 
+    sententiae molestiae principes suavitate conclusionemque postea docendi
+     instructior partiendo efficitur has
+    """)
 
 with col2:
-    # st.markdown("""
-    # <style>
-    # .circle-image {
-    #     width: 250px;
-    #     height: 250px;
-    #     border-radius: 50%;
-    #     overflow: hidden;
-    #     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    #     background: linear-gradient(to top, white, gray, black);
-    #     background-clip: padding-box; /* Ensures the background (gradient) is only visible in the padding area */
-    #     border: 5px solid transparent;
-    #     transition: transform 0.5s ease;
-    # }
-    #
-    # .circle-image img {
-    #     width: 100%;
-    #     height: 100%;
-    #     object-fit: cover;
-    # }
-    #
-    # .circle-image:hover {
-    #     transform: rotate(180deg);
-    #     cursor: pointer;
-    # }
-    # </style>
-    #
-    # <div class="circle-image">
-    #     <img src="https://iili.io/J1M8Mog.png" alt="My Rectangular Image">
-    # </div>
-    # """, unsafe_allow_html=True)
-    st.image(image='assets/playdough-nerd.png', use_column_width=True)
-    st.caption("""
-    <style>
-        center {
-            color: black;
-        }
-    </style>
-    <center>This is what I look like</center>
+    st.image(image='src/assets/playdough-nerd.png', use_column_width=True)
+    st.markdown("""
+        <p style="text-align:center;">
+            This is what I look like.
+        </p>
     """, unsafe_allow_html=True)
 
-st.subheader('Tools')
-st.divider()
+st.image(image='src/assets/tools.png')
+
+# ABILITIES COLUMNS
+abilities = st.columns(3, gap='small')
+
+with abilities[0]:
+    planck('BACK-END')
+    ico("C Lang", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg")
+    ico("C++ Lang", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg")
+    ico("Java", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg")
+    ico("Python", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg")
+
+with abilities[1]:
+    planck('FRONT-END')
+    ico("HTML5", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg")
+    ico("CSS", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg")
+    ico("Javascript", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg")
+
+with abilities[2]:
+    planck('DATA')
+    ico("SQLite", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg")
+    ico("SQL Server", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg")
+    ico("Azure SQL", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg")

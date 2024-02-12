@@ -1,43 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap');
+
+:root {
+    --font-bitmap: 'Roboto Mono', monospace;
+    --font-tegomin: 'New Tegomin', serif;
+    --font-sz: 18px;
+    --font-color: #0D1217;
+    --indent: 25px;
+
+    --letter-spc: 0.5px;
+    --line-hgt: 28px;
+}
+
+/* STREAMLIT HEADER + FOOTER */
 header, footer {
     visibility: hidden;
 }
 
-.st-emotion-cache-uf99v8 {
-    /*background-image: url("https://iili.io/J1MG9st.png");*/
-    background-image: url("https://iili.io/J1VMnef.png");
-    background-position: center;
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-attachment: fixed; /* Keep the background image fixed during scroll */
-    background-size: 100% 100%;
+body, center {
+    font-family: var(--font-bitmap);
+    line-height: var(--line-hgt);
+    letter-spacing: var(--letter-spc);
+    font-size: var(--font-sz);
+    text-indent: var(--indent);
 }
 
-.st-emotion-cache-6qob1r {
-    /*background-image: url("");*/
+p {
+    font-family: var(--font-bitmap);
+    line-height: var(--line-hgt);
+    letter-spacing: var(--letter-spc);
+    font-size: var(--font-sz);
+    font-weight: 500;
+    text-indent: var(--indent);
+    color: #0D1217;
+}
+
+/* IMAGE BUTTON */
+.st-emotion-cache-9aoz2h:hover .e1vs0wn31 {
+    display: none;
+}
+
+/* BACKGROUND IMAGE */
+.st-emotion-cache-uf99v8 {
+    background-image: url("https://iili.io/J1Ve2LJ.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
 
 /* MAIN CONTENT */
 section.main > div {
-    max-width:50rem;
-    /*background-image: url("https://iili.io/J1VuOMv.png");*/
+    max-width:55rem;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
 
-
-p {
-    font-family: 'Souvenir', sans-serif;
-    letter-spacing: 0.5px;
-    font-size: 16px;
-    font-weight: 500;
-    color: #0D1217;
-    text-indent: 25px;
-}
-
 hr {
     color: #F9F9F9;
-    margin-top: 0px;
+    margin-top: 0;
     margin-bottom: 18px;
 }
 
@@ -46,17 +69,42 @@ hr {
     color: rgb(146, 208, 252);
 }
 
-/* ELEMENTS */
-.stylized-divider-element {
-    width: 100%;
-    height: 5px;
-    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
-    border-radius: 5px;
-    margin-bottom: 25px;
+/* BUTTON */
+.st-emotion-cache-c0ynp0 {
+    display: none;
 }
 
-.saitos-lair {
-    padding: 20px;
-    border: 5px solid darkgray;
-    margin-bottom: 20px;
+.st-emotion-cache-pkbazv {
+    font-family: 'Kubasta', sans-serif;
+    line-height: 28px !important;
+    letter-spacing: 0.5px !important;
+    font-size: 28px !important;
+    font-weight: 400 !important;
 }
+
+.eczjsme6 {
+    line-height: 28px !important;
+    letter-spacing: 0.5px !important;
+    font-size: 28px !important;
+    font-weight: 400 !important;
+}
+
+.planck {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'New Tegomin', serif;
+    font-size: 35px;
+    width:280px;
+    height:100px;
+    background-image: url("https://iili.io/J1SKemN.md.png");
+    background-size: 100% 100%;
+}
+
+.planck span {
+    position: relative;
+    top: 10px;
+    right: 13px;
+}
+
+/* SIDEBAR */
