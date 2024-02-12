@@ -30,7 +30,7 @@ with col2:
         </p>
     """, unsafe_allow_html=True)
 
-st.image(image='src/assets/tools.png')
+st.image(image='src/assets/tools.png', width=900)
 
 # ABILITIES COLUMNS
 abilities = st.columns(3, gap='small')
@@ -42,14 +42,24 @@ with abilities[0]:
     ico("Java", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg")
     ico("Python", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg")
 
+    planck('OTHER')
+    ico("JSON", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/json/json-original.svg")
+    ico("LaTeX", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tex/tex-original.svg")
+
+
 with abilities[1]:
     planck('FRONT-END')
     ico("HTML5", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg")
-    ico("CSS", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg")
+    ico("CSS3", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg")
     ico("Javascript", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg")
 
 with abilities[2]:
     planck('DATA')
-    ico("SQLite", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg")
-    ico("SQL Server", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg")
-    ico("Azure SQL", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg")
+    with st.expander('SQL Lang'):
+        ico("SQLite", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg")
+        ico("SQL Server", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg")
+        ico("Azure SQL", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg")
+    with st.expander('Python Libs'):
+        ico('Pandas', "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg")
+        ico('Matplot', "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg")
+        ico('Plotly', "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/plotly/plotly-original.svg")

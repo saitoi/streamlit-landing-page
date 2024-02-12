@@ -39,3 +39,66 @@
     font-weight: bold;
     text-shadow: 1px 1px 0 #FFF; /* Retro text shadow effect */
 }
+
+.st-emotion-cache-6vrlx3 {
+    position: relative;
+    display: flex;
+    width: 100%;
+    font-size: 16px; /* Slightly larger to mimic older UIs */
+    padding: 0.75rem 1rem;
+    list-style-type: none;
+    font-family: 'New Tegomin', serif; /* Using Roboto Mono for a retro-modern look */
+    background-color: #f0f0f0; /* Muted background color for a classic feel */
+    color: #333; /* Darker text for contrast */
+    border: 2px solid #8B4513; /* Adding a solid border for a vintage look */
+    border-radius: 4px; /* Slightly rounded corners */
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2); /* Adding a subtle shadow for depth */
+    margin: 10px 2px;
+}
+
+.st-emotion-cache-13na8ym {
+    margin-bottom: 10px; /* Adjusted for better spacing */
+    margin-top: 10px; /* Adjusted for better spacing */
+    width: 100%;
+    border-style: solid;
+    border-width: 2px; /* Increased width for a more pronounced border */
+    border-color: #8B4513; /* Changed to a darker, vintage-inspired color */
+    border-radius: 4px; /* Adjusted radius for a slightly more retro feel */
+    background-color: #f5f5dc; /* Optional: adding a retro background color */
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2); /* Optional: adding a shadow for depth */
+}
+
+/* EXPANDER */
+.st-emotion-cache-sh2krr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* EXPANDER TEXT */
+.st-emotion-cache-sh2krr p {
+    font-family: 'New Tegomin', serif !important;
+    font-size: 30px !important;
+}
+
+/* SIDEBAR BUTTON */
+.st-emotion-cache-uhu6ih {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold; /* Enhanced text weight for readability */
+    margin: 0px 0.125rem;
+    color: #4B3621; /* Switched to a deep, warm brown for text, evoking a vintage vibe */
+    width: auto;
+    user-select: none;
+    font-size: 16px; /* Adjusted for a balanced appearance */
+    line-height: 1.2;
+    min-width: 2rem;
+    min-height: 2rem;
+    padding: 0.5rem; /* Providing enough space for interaction */
+    background: linear-gradient(to right, #665D1E, #F4F3EE); /* A gradient from dark olive to a soft, antique white */
+    border: 3px solid #8B4513; /* A rich saddle brown for the border, adding to the vintage look */
+    border-radius: 0; /* Keeping elements squarely shaped for a retro feel */
+    box-shadow: 2px 2px 0px #3C280D; /* A darker shadow for depth, using a deep brown */
+    text-shadow: 1px 1px #F5F5DC; /* A subtle, light shadow for the text, enhancing legibility */
+}
