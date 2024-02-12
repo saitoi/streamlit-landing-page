@@ -1,13 +1,23 @@
 import streamlit as st
-from elements import planck, ico
+from elements import planck, ico, insert_css
 from streamlit_extras.stylable_container import stylable_container
-
-with open("main-page.css") as main, open("interpage.css") as interpage:
-    st.markdown(f'<style>{main.read()}</style>', unsafe_allow_html=True)
-    st.markdown(f'<style>{interpage.read()}</style>', unsafe_allow_html=True)
 
 # ICONS
 st.markdown('<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">',unsafe_allow_html=True)
+
+# css_paths = [
+#     'src/styles/main-page.css',
+#     'src/styles/interpage.css',
+#     'src/styles/sidebar.css'
+# ]
+#
+# css_content = [open(file).read() for file in css_paths]
+#
+# combined_css = '<style>' + '\n'.join(css_content) + '</style>'
+#
+# st.markdown(combined_css, unsafe_allow_html=True)
+
+insert_css()
 
 st.image(image='src/assets/main-title.png', width=900)
 
@@ -15,12 +25,14 @@ st.image(image='src/assets/main-title.png', width=900)
 col1, col2 = st.columns([0.6, 0.4], gap='small')
 
 with col1:
-    st.write("""Hey, my name is Pedro Saito and I'm a Computer Science 
-    Undergrad at the Federal University of Rio de Janeiro.appetere putent 
-    imperdiet luctus menandri suscipiantur habeo constituto auctor 
-    sententiae molestiae principes suavitate conclusionemque postea docendi
-     instructior partiendo efficitur has
-    """)
+    st.markdown("""
+        <p>
+            Hey, my name is Pedro Saito and I'm a Computer Science 
+    Undergrad at the Federal University of Rio de Janeiro. Even though my 
+    main interests are Datascience with <span>Python</span> and Back-End,
+    I've got more experience working with Front-End and also Data.
+        </p>
+    """, unsafe_allow_html=True)
 
 with col2:
     st.image(image='src/assets/playdough-nerd.png', use_column_width=True)
@@ -75,3 +87,4 @@ with stylable_container(
             ico('Pandas', "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg")
             ico('Matplot', "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg")
             ico('Plotly', "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/plotly/plotly-original.svg")
+            ico('Streamlit', 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/streamlit/streamlit-original.svg')

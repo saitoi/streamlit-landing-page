@@ -58,6 +58,21 @@ section.main > div {
     background-size: cover;
 }
 
+/*section.main > div {*/
+/*    max-width: 55rem;*/
+/*    background-position: center;*/
+/*    background-repeat: no-repeat;*/
+/*    background-attachment: fixed;*/
+/*    background-size: cover;*/
+/*    !*background-image: url('path_to_your_retro_background_image.jpg'); !* Add a retro-styled background image *!*!*/
+/*    color: #fff; !* Use a color that contrasts well with your background for a retro feel *!*/
+/*    font-family: 'Courier New', Courier, monospace; !* Choose a typewriter-style font or any vintage font *!*/
+/*    border: 2px solid #f00; !* Optional: add a border to mimic old TV screens or printed posters *!*/
+/*    box-shadow: 5px 5px #f00; !* Optional: add a shadow for a layered, vintage poster look *!*/
+/*    !*text-shadow: 2px 2px #000; !* Optional: add text shadow for depth, common in retro designs *!*!*/
+/*}*/
+
+
 hr {
     color: #F9F9F9;
     margin-top: 0;
@@ -75,7 +90,7 @@ hr {
 }
 
 .st-emotion-cache-pkbazv {
-    font-family: 'Kubasta', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     line-height: 28px !important;
     letter-spacing: 0.5px !important;
     font-size: 28px !important;
