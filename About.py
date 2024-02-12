@@ -1,6 +1,8 @@
+import json
 import streamlit as st
 from elements import planck, ico, insert_css
 from streamlit_extras.stylable_container import stylable_container
+
 
 # ICONS
 st.markdown('<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">',unsafe_allow_html=True)
@@ -43,44 +45,36 @@ st.image(image='src/assets/tools.png', width=900)
 # ABILITIES COLUMNS
 abilities = st.columns(3, gap='small')
 
-with stylable_container(
-    key='board',
-    css_styles="""
-        {
-            backgroud-color: black;
-        }
-    """,
-):
-    with abilities[0]:
-        planck('BACK-END')
-        ico("C Lang", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg")
-        ico("C++ Lang", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg")
-        ico("Java", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg")
-        ico("Python", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg")
+with abilities[0]:
+    planck('BACK-END')
+    ico('C Lang')
+    ico('C++ Lang')
+    ico('Java')
+    ico('Python')
 
-        planck('PLATFORMS')
-        ico('Jupyter', 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original-wordmark.svg')
-        ico('Figma',  "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg")
+    planck('PLATFORMS')
+    ico('Jupyter')
+    ico('Figma')
 
-    with abilities[1]:
-        planck('FRONT-END')
-        ico("HTML5", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg")
-        ico("CSS3", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg")
-        ico("Javascript", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg")
+with abilities[1]:
+    planck('FRONT-END')
+    ico("HTML5")
+    ico("CSS3")
+    ico("Javascript")
 
-        planck('OTHER')
-        ico('Git', 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg')
-        ico("JSON", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/json/json-original.svg")
-        ico("LaTeX", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tex/tex-original.svg")
+    planck('OTHER')
+    ico('Git')
+    ico("JSON")
+    ico("LaTeX")
 
-    with abilities[2]:
-        planck('DATA')
-        with st.expander('SQL Lang'):
-            ico("SQLite", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg")
-            ico("SQL Server", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg")
-            ico("Azure SQL", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg")
-        with st.expander('Python Libs'):
-            ico('Pandas', "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg")
-            ico('Matplot', "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg")
-            ico('Plotly', "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/plotly/plotly-original.svg")
-            ico('Streamlit', 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/streamlit/streamlit-original.svg')
+with abilities[2]:
+    planck('DATA')
+    with st.expander('SQL Lang'):
+        ico("SQLite")
+        ico("SQL Server")
+        ico("Azure SQL")
+    with st.expander('Python Libs'):
+        ico('Pandas')
+        ico('Matplot')
+        ico('Plotly')
+        ico('Streamlit')

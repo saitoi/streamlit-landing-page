@@ -82,9 +82,13 @@
 
 /* EXPANDER TEXT */
 .st-emotion-cache-l9bjmx p,
+.st-emotion-cache-10ijpeg p,
 .st-emotion-cache-6vrlx3 p {
     font-family: 'New Tegomin', serif !important;
-    font-size: 30px !important;
+    font-size: 25px !important;
+    border: 3px solid #8B4513;
+    background-image: linear-gradient(145deg, rgba(244, 197, 66, 0.6) 10%, rgba(202, 152, 34, 0.8) 90%);
+    padding: 0.5rem;
 }
 
 /* SIDEBAR BUTTON */
@@ -94,7 +98,6 @@
     justify-content: center;
     font-weight: bold; /* Enhanced text weight for readability */
     margin: 0px 0.125rem;
-    color: #4B3621; /* Switched to a deep, warm brown for text, evoking a vintage vibe */
     width: auto;
     user-select: none;
     font-size: 16px; /* Adjusted for a balanced appearance */
@@ -102,7 +105,6 @@
     min-width: 2rem;
     min-height: 2rem;
     padding: 0.5rem; /* Providing enough space for interaction */
-    background: linear-gradient(to right, #665D1E, #F4F3EE); /* A gradient from dark olive to a soft, antique white */
     border: 3px solid #8B4513; /* A rich saddle brown for the border, adding to the vintage look */
     border-radius: 0; /* Keeping elements squarely shaped for a retro feel */
     box-shadow: 2px 2px 0px #3C280D; /* A darker shadow for depth, using a deep brown */
