@@ -40,7 +40,8 @@
     text-shadow: 1px 1px 0 #FFF; /* Retro text shadow effect */
 }
 
-.st-emotion-cache-6vrlx3 {
+
+.st-emotion-cache-p5msec {
     position: relative;
     display: flex;
     width: 100%;
@@ -56,7 +57,7 @@
     margin: 10px 2px;
 }
 
-.st-emotion-cache-13na8ym {
+.st-emotion-cache-1h9usn1 {
     margin-bottom: 10px; /* Adjusted for better spacing */
     margin-top: 10px; /* Adjusted for better spacing */
     width: 100%;
@@ -69,20 +70,20 @@
 }
 
 /* EXPANDER */
-.st-emotion-cache-sh2krr {
+.st-emotion-cache-l9bjmx {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 /* EXPANDER TEXT */
-.st-emotion-cache-sh2krr p {
+.st-emotion-cache-l9bjmx p {
     font-family: 'New Tegomin', serif !important;
     font-size: 30px !important;
 }
 
 /* SIDEBAR BUTTON */
-.st-emotion-cache-uhu6ih {
+.st-emotion-cache-iiif1v {
     display: inline-flex;
     align-items: center;
     justify-content: center;
