@@ -5,18 +5,6 @@ from streamlit_extras.stylable_container import stylable_container
 # ICONS
 st.markdown('<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">',unsafe_allow_html=True)
 
-# css_paths = [
-#     'src/styles/main-page.css',
-#     'src/styles/interpage.css',
-#     'src/styles/sidebar.css'
-# ]
-#
-# css_content = [open(file).read() for file in css_paths]
-#
-# combined_css = '<style>' + '\n'.join(css_content) + '</style>'
-#
-# st.markdown(combined_css, unsafe_allow_html=True)
-
 insert_css()
 
 st.image(image='src/assets/main-title.png', width=900)
@@ -24,15 +12,23 @@ st.image(image='src/assets/main-title.png', width=900)
 # COLUMNS
 col1, col2 = st.columns([0.6, 0.4], gap='small')
 
-with col1:
-    st.markdown("""
-        <p>
-            Hey, my name is Pedro Saito and I'm a Computer Science 
-    Undergrad at the Federal University of Rio de Janeiro. Even though my 
-    main interests are Datascience with <span>Python</span> and Back-End,
-    I've got more experience working with Front-End and also Data.
-        </p>
-    """, unsafe_allow_html=True)
+with stylable_container(
+    key='col1',
+    css_styles="""
+        {
+            backgrond-color: white;
+        }  
+"""
+):
+    with col1:
+        st.markdown("""
+            <p id="first-txt">
+                Hey, my name is Pedro Saito and I'm a Computer Science 
+        Undergrad at the Federal University of Rio de Janeiro. Even though my 
+        main interests are Datascience with <span>Python</span> and Back-End,
+        I've got more experience working with Front-End and also Data.
+            </p>
+        """, unsafe_allow_html=True)
 
 with col2:
     st.image(image='src/assets/playdough-nerd.png', use_column_width=True)
@@ -50,10 +46,10 @@ abilities = st.columns(3, gap='small')
 with stylable_container(
     key='board',
     css_styles="""
-        #board {
+        {
             backgroud-color: black;
         }
-    """
+    """,
 ):
     with abilities[0]:
         planck('BACK-END')
