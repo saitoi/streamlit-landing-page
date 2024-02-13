@@ -74,14 +74,6 @@ hr {
     display: none;
 }
 
-.st-emotion-cache-pkbazv {
-    font-family: 'Roboto Mono', monospace;
-    line-height: 28px !important;
-    letter-spacing: 0.5px !important;
-    font-size: 28px !important;
-    font-weight: 400 !important;
-}
-
 .eczjsme6 {
     line-height: 28px !important;
     letter-spacing: 0.5px !important;
@@ -148,7 +140,3 @@ hr {
 .st-emotion-cache-fplge5:hover {
     transform: translateY(-5px); /* Lifts the container slightly to give a dynamic, interactive feel on hover */
 }
-
-
-
-/* SIDEBAR */

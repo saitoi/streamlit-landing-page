@@ -1,34 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+:root {
+    --font-cursive: "Dancing Script", cursive;
+}
+
 /* SIDEBAR */
 .st-emotion-cache-6qob1r {
-    background-color: #a67b5b; /* Brown shade for the cave-like feel */
-    color: #ffebcd; /* Off-white yellow shade for the text, which gives a retro feel */
-    border: 2px solid #c0c0c0; /* Gray border for a touch of contrast */
-    text-shadow: 1px 1px 0 #000; /* Black text shadow for depth, common in retro designs */
-    box-shadow: inset 0 0 10px #000000; /* Inner shadow to mimic a cavern's depth */
-    padding: 20px; /* Ample padding for a classic look */
-    border-radius: 0; /* Retro designs often had sharp corners */
+    font-family: var(--font-cursive);
+    background-image: url("https://iili.io/J1bXRVV.png");
+    background-position: center center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
-    transition: transform 0.3s ease-in-out; /* Smooth transition for any hover effects */
+    background-color: #a67b5b;
+    color: black;
+    border: 2px solid #c0c0c0;
+    text-shadow: 1px 1px 0 #000;
+    box-shadow: inset 0 0 10px #000000;
+    padding: 20px;
+    border-radius: 0;
+    transition: transform 0.3s ease-in-out;
 }
 
 /* ANY SIDEBAR LINK */
 .eczjsme6 {
-    background-color: whitesmoke;
-    padding: 10px 20px;
-    margin: ;
+    font-family: var(--font-cursive);
+    color: black;
+    padding: 8px 20px;
+    margin: 15px 0;
 }
 
 .eczjsme6:active {
-    color: #ffd700; /* Gold color to indicate active status */
-    position: relative;
-    top: 1px; /* Simulate button press */
-    text-shadow: none; /* Retro sites often had no text shadow */
+    transform: translateY(2px); /* Gives the impression of pressing down */
+    text-shadow: 1px 1px 3px #503812; /* Deeper shadow to simulate being pressed */
+    background-color: #e8e8e8;
 }
 
 .eczjsme6:hover {
-    color: #ffffe0; /* Lighter color for hover state */
-    text-decoration: none; /* Remove underline on hover */
-    background-color: #f8f8ff; /* Add a subtle background color on hover */
-    transition: background-color 0.3s ease-in-out; /* Smooth transition for the background */
+    background-color: rgba(255, 248, 220, 0.5); /* Lighter, more transparent on hover */
+    text-shadow: 2px 2px 1px #503812; /* More pronounced shadow on hover */
 }
