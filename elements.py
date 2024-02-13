@@ -17,6 +17,7 @@ css_content = [open(file).read() for file in css_paths]
 combined_css = '<style>' + '\n'.join(css_content) + '</style>'
 
 
+# FUNCTIONS
 def insert_css() -> None:
     st.markdown(combined_css, unsafe_allow_html=True)
 

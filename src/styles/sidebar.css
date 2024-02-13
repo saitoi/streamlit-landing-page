@@ -1,4 +1,34 @@
 /* SIDEBAR */
 .st-emotion-cache-6qob1r {
+    background-color: #a67b5b; /* Brown shade for the cave-like feel */
+    color: #ffebcd; /* Off-white yellow shade for the text, which gives a retro feel */
+    border: 2px solid #c0c0c0; /* Gray border for a touch of contrast */
+    text-shadow: 1px 1px 0 #000; /* Black text shadow for depth, common in retro designs */
+    box-shadow: inset 0 0 10px #000000; /* Inner shadow to mimic a cavern's depth */
+    padding: 20px; /* Ample padding for a classic look */
+    border-radius: 0; /* Retro designs often had sharp corners */
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 0.3s ease-in-out; /* Smooth transition for any hover effects */
+}
 
+/* ANY SIDEBAR LINK */
+.eczjsme6 {
+    background-color: whitesmoke;
+    padding: 10px 20px;
+    margin: ;
+}
+
+.eczjsme6:active {
+    color: #ffd700; /* Gold color to indicate active status */
+    position: relative;
+    top: 1px; /* Simulate button press */
+    text-shadow: none; /* Retro sites often had no text shadow */
+}
+
+.eczjsme6:hover {
+    color: #ffffe0; /* Lighter color for hover state */
+    text-decoration: none; /* Remove underline on hover */
+    background-color: #f8f8ff; /* Add a subtle background color on hover */
+    transition: background-color 0.3s ease-in-out; /* Smooth transition for the background */
 }

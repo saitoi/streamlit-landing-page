@@ -89,6 +89,7 @@ hr {
     font-weight: 400 !important;
 }
 
+/* PLANCK */
 .planck {
     display: flex;
     justify-content: center;
@@ -114,17 +115,16 @@ hr {
     flex-grow: 1;
     align-items: stretch;
     gap: 1rem;
-    padding: 2rem;
-    background: #f5f5dc; /* A beige background that has a vintage, aged paper feel */
+    padding: 1.5rem;
+    background: #f5f5dc;
     border: 3px dashed #a67c00; /* A dashed border can give a retro, handcrafted look */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth, like old posters */
     color: #3a2e25; /* Earthy text color for a vintage vibe */
     font-family: 'Courier New', Courier, monospace; /* Monospace font for a classic, typewritten look */
     border-radius: 15px; /* Slightly larger border radius for a softer, more classic look */
-    /*background-image: url('path_to_texture.png'); !* Optionally, add a texture to enhance the retro feel *!*/
     background-blend-mode: overlay; /* Use overlay to blend the background image with the color */
     filter: sepia(0.2) contrast(85%); /* Sepia for an aged effect, reduced contrast for subtlety */
-    transition: 0.2ms ease-in;
+    transition: 0.2s ease-in-out;
 }
 
 .st-emotion-cache-ocqkz7:hover {
