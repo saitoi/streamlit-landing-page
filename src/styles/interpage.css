@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
 
+/* BUTTON */
+.st-emotion-cache-c0ynp0 {
+    display: none;
+}
+
 /* IMAGE ICONS */
 .st-emotion-cache-1r6slb0 {
     align-items: center;
@@ -86,8 +91,6 @@
 .st-emotion-cache-6vrlx3 p {
     font-family: 'New Tegomin', serif !important;
     font-size: 25px !important;
-    border: 3px solid #8B4513;
-    background-image: linear-gradient(145deg, rgba(244, 197, 66, 0.6) 10%, rgba(202, 152, 34, 0.8) 90%);
     padding: 0.5rem;
 }
 

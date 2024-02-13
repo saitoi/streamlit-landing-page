@@ -8,9 +8,10 @@ with open(json_path, 'r') as f:
 
 # CSS
 css_paths = [
-    'src/styles/main-page.css',
-    'src/styles/interpage.css',
-    'src/styles/sidebar.css'
+    'src/styles/main-page.css',     # Main
+    'src/styles/interpage.css',     # Interpage elements
+    'src/styles/sidebar.css',       # Sidebar
+    'src/styles/portfolio.css'      # Portfolio
 ]
 
 css_content = [open(file).read() for file in css_paths]
@@ -25,6 +26,14 @@ def insert_css() -> None:
 def planck(text: str) -> None:
     st.markdown(f"""
     <div class="planck">
+        <span>{text}</span>
+    </div>
+    """, unsafe_allow_html=True)
+
+
+def frame(text: str) -> None:
+    st.markdown(f"""
+    <div class="circus">
         <span>{text}</span>
     </div>
     """, unsafe_allow_html=True)

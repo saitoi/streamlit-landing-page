@@ -1,0 +1,25 @@
+/*  */
+
+/* CIRCUS */
+.circus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'New Tegomin', serif;
+    font-size: 35px;
+    width:95%;
+    height:130px;
+    background-image: url("https://iili.io/JE97iOl.png");
+    background-size: 100% 100%;
+}
+
+.circus span {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 45px;
+    position: relative;
+    color: #fff; /* This is the base color of the text */
+    text-shadow:
+            0 0 1px #fff, /* Slight white glow */
+            0 0 3px #fff, /* White glow */
+            0 0 5px #fff; /* Subtle stronger white glow */
+}

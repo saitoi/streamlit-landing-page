@@ -1,6 +1,5 @@
 import streamlit as st
 from elements import insert_css
+import streamlit_extras.stylable_container as cont
 
 insert_css()
-
-st.image(image='src/assets/port.png', width=800)

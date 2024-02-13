@@ -1,5 +1,6 @@
 import streamlit as st
 from elements import planck, ico, insert_css
+from streamlit_extras.grid import grid
 from streamlit_extras.stylable_container import stylable_container
 
 # CSS FROM 'src/styles/.'
@@ -13,7 +14,7 @@ col1, col2 = st.columns([0.6, 0.4], gap='small')
 
 with col1:
     st.markdown("""
-        <p id="first-txt">
+        <p>
             Hey, my name is Pedro Saito and I'm a Computer Science 
     Undergrad at the Federal University of Rio de Janeiro. Even though my 
     main interests are Datascience with <span>Python</span> and Back-End,
@@ -28,6 +29,15 @@ with col2:
             This is what I look like.
         </p>
     """, unsafe_allow_html=True)
+
+# CONTINUE WRITING
+st.markdown("""
+    <div class="st-emotion-cache-ocqkz7">
+        <div class="st-emotion-cache-fplge5">
+            <p>So this is a test..</p>
+        </div>
+    </div>
+""", unsafe_allow_html=True)
 
 # TOOLS TITLE
 st.image(image='src/assets/tools.png', width=900)

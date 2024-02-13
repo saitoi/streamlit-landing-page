@@ -25,18 +25,23 @@
 /* ANY SIDEBAR LINK */
 .eczjsme6 {
     font-family: var(--font-cursive);
+    line-height: 28px ;
+    letter-spacing: 0.5px;
+    font-size: 28px;
+    font-weight: 400;
     color: black;
     padding: 8px 20px;
     margin: 15px 0;
 }
 
 .eczjsme6:active {
+    color: black;
     transform: translateY(2px); /* Gives the impression of pressing down */
     text-shadow: 1px 1px 3px #503812; /* Deeper shadow to simulate being pressed */
     background-color: #e8e8e8;
 }
 
 .eczjsme6:hover {
+    color: black;
     background-color: rgba(255, 248, 220, 0.5); /* Lighter, more transparent on hover */
-    text-shadow: 2px 2px 1px #503812; /* More pronounced shadow on hover */
 }
