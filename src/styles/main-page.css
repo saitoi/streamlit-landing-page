@@ -17,7 +17,7 @@
 
 /* STREAMLIT HEADER + FOOTER */
 header, footer {
-    /*visibility: hidden;*/
+    visibility: hidden;
 }
 
 /* MAIN CONTENT */
