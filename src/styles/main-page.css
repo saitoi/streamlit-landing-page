@@ -17,7 +17,7 @@
 
 /* STREAMLIT HEADER + FOOTER */
 header, footer {
-    visibility: hidden;
+    /*visibility: hidden;*/
 }
 
 /* MAIN CONTENT */
@@ -27,6 +27,28 @@ body, center {
     letter-spacing: var(--letter-spc);
     font-size: var(--font-sz);
     text-indent: var(--indent);
+}
+
+/* SCROLLER */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #DAA520; /* A golden color for a vintage look */
+    border: 2px solid #8B4513; /* A border to give the thumb a more defined look */
+    border-radius: 0px; /* Rounded corners for a softer, more classic look */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #BC8F8F; /* A darker color on hover for contrast */
 }
 
 p {
@@ -62,13 +84,6 @@ section.main > div {
     background-size: cover;
 }
 
-/* DIVIDER */
-/*hr {*/
-/*    color: #F9F9F9;*/
-/*    margin-top: 0;*/
-/*    margin-bottom: 18px;*/
-/*}*/
-
 /* TITLE */
 .st-emotion-cache-183lzff {
     color: rgb(146, 208, 252);
@@ -91,10 +106,6 @@ section.main > div {
     position: relative;
     top: 10px;
     right: 13px;
-}
-
-.portfolio {
-    width: 95%;
 }
 
 /* MAIN PORTFOLIO PAGE */

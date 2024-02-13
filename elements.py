@@ -31,12 +31,25 @@ def planck(text: str) -> None:
     """, unsafe_allow_html=True)
 
 
-def frame(text: str) -> None:
+def circus_frame(text: str) -> None:
     st.markdown(f"""
     <div class="circus">
         <span>{text}</span>
     </div>
     """, unsafe_allow_html=True)
+
+
+def project(title: str, img: str, desc: str) -> None:
+    circus_frame(f'{title}')
+    st.markdown(f"""
+    <div class="st-emotion-cache-ocqkz7 portfolio">
+        <img src="{img}" alt="{title}" Image />
+        <div class="st-emotion-cache-fplge5">
+            <p>{desc}</p>
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
+    pass
 
 
 def ico(name: str) -> None:

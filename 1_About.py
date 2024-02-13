@@ -1,7 +1,5 @@
 import streamlit as st
 from elements import planck, ico, insert_css
-from streamlit_extras.grid import grid
-from streamlit_extras.stylable_container import stylable_container
 
 # CSS FROM 'src/styles/.'
 insert_css()

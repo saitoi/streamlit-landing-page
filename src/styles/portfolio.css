@@ -1,4 +1,5 @@
-/*  */
+@import url('https://fonts.googleapis.com/css2?family=Showcard+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 
 /* CIRCUS */
 .circus {
@@ -9,17 +10,40 @@
     font-size: 35px;
     width:95%;
     height:130px;
-    background-image: url("https://iili.io/JE97iOl.png");
+    background-image: url("https://iili.io/JE97iOl.png");   /* Red Background */
     background-size: 100% 100%;
 }
 
 .circus span {
-    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Monoton', cursive;
     font-size: 45px;
+    margin-right: 4%;
     position: relative;
     color: #fff; /* This is the base color of the text */
     text-shadow:
             0 0 1px #fff, /* Slight white glow */
-            0 0 3px #fff, /* White glow */
-            0 0 5px #fff; /* Subtle stronger white glow */
+            0 0 3px #fff; /* White glow */
+    transition: 0.2s ease-in-out;
+}
+
+.circus span:hover {
+    cursor: auto;
+    text-shadow:
+        0 0 2px #fff, /* Increased white glow */
+        0 0 5px #fff, /* Increased white glow */
+        0 0 6px #fff;
+}
+
+.portfolio {
+    width: 86%;
+    margin-left: 4%;
+    margin-bottom: 10%;
+}
+
+.portfolio img {
+    width: 100%;
+    border-radius: 1em;
+    /*filter: sepia(60%) contrast(1.4) saturate(1.8);*/
+    border: 4px solid #DAA520;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
