@@ -20,6 +20,10 @@ header, footer {
     visibility: hidden;
 }
 
+.viewerBadge_link__qRIco {
+    display: none;
+}
+
 /* MAIN CONTENT */
 body, center {
     font-family: var(--font-bitmap);
