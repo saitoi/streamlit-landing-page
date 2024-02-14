@@ -9,6 +9,7 @@
 .st-emotion-cache-1r6slb0 {
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
 }
 
 .icon-container {
@@ -114,4 +115,11 @@
     text-shadow: 1px 1px #F5F5DC; /* A subtle, light shadow for the text, enhancing legibility */
     background-image: linear-gradient(145deg, rgba(244, 197, 66, 0.6) 10%, rgba(202, 152, 34, 0.8) 90%);
     color: #332c1a;
+}
+
+.main-images {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
 }

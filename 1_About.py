@@ -1,5 +1,5 @@
 import streamlit as st
-from elements import planck, ico, insert_css
+from elements import *
 
 st.set_page_config(
     page_title="Saito's Lair",
@@ -12,7 +12,7 @@ st.set_page_config(
 insert_css()
 
 # SAITOS LAIR TITLE
-st.image(image='src/assets/main-title.png', width=900)
+image('https://iili.io/JEddqPI.png')
 
 # COLUMNS
 col1, col2 = st.columns([0.6, 0.4], gap='small')
@@ -45,7 +45,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # TOOLS TITLE
-st.image(image='src/assets/tools.png', width=900)
+image('https://iili.io/JEd3Oua.md.png')
 
 # ABILITIES COLUMNS
 abilities = st.columns(3, gap='small')

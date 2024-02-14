@@ -59,3 +59,9 @@ def ico(name: str) -> None:
         <p class="icon-text">{name}</p>
     </div>
     """, unsafe_allow_html=True)
+
+
+def image(src: str) -> None:
+    st.markdown(f"""
+        <img src="{src}" class="main-images" alt="Image"/>
+    """, unsafe_allow_html=True)
