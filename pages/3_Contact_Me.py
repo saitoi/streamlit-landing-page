@@ -1,5 +1,5 @@
 import streamlit as st
-from elements import insert_css
+from elements import *
 
 st.set_page_config(
     page_title="Saito's Lair",
@@ -9,3 +9,7 @@ st.set_page_config(
 )
 
 insert_css()
+
+st.markdown(f"""
+        <img src="https://iili.io/JEdg3FI.md.png" class="continue" alt="Image"/>
+    """, unsafe_allow_html=True)
