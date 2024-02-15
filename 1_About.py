@@ -45,7 +45,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # TOOLS TITLE
-image('https://iili.io/JEd3Oua.md.png')
+image('https://iili.io/JECaqep.png')
 
 # ABILITIES COLUMNS
 abilities = st.columns(3, gap='small')

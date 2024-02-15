@@ -127,6 +127,6 @@
 .continue {
     display: block;
     width: 80%;
-    margin-bottom: 20px;
+    margin: 0 0 10% 10%;
     box-sizing: border-box;
 }
